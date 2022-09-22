@@ -25,6 +25,21 @@ nav  {
     font-size: 40px;
     border-image: 50px;
     }
+    
+    #top-section p {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+#top-section img {
+    display: inline-block;
+    width: 40%;
+    vertical-align:middle;
+}
 
 #middle-section {
     border: 3px solid rgb(61, 98, 5);
@@ -33,22 +48,30 @@ nav  {
     font-size: 40px;
 }
 
+#bottom-section {
+    /* display: inline; */
+    margin: auto;
+    width: 80%;
+}
 #bottom-left-section {
     border: 5px solid rgb(210, 56, 56);
     display: inline-block;
-    max-width: 50%;
+    max-width: 40%;
     text-align: center;
 }
 
 #bottom-left-section img {
     max-width: 100%;
-    float: center;
+}
+
+#bottom-right-section img {
+    max-width: 100%;
 }
 
 #bottom-right-section {
     border: 5px solid yellow;
     display: inline;
-    max-width: 50%;
+    max-width: 40%;
     float: right;
     text-align: center;
 }

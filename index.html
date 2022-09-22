@@ -6,24 +6,87 @@
         <link rel="stylesheet" href="style.css">
         
 </head>
+
+
+
+
 <body>
     <header>
         Crabbing in the Sound
     </header>
 
 
+<script>
+    
+
+    let message = "Hello Crabbers!";
+    alert(message);
+
+
+</script>
+    
+  
+
 
 <main>
 
 <nav>
 <a href="https://exoticbutters00.github.io/hello-world/">Click here to learn about Sports!</a>
-</nav>
 
+
+</nav>
+<script src="code.js"></script> 
 
 <section id="top-section">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.LvXDIT0SgBjJQ5eo9r1cxgHaFj%26pid%3DApi&f=1" alt="Pile of crabs">
     <p>Welcome to Crabbing in the Sound! Here we will give you the basics to get you started catching crab, the good kind. :) 
     </p>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.LvXDIT0SgBjJQ5eo9r1cxgHaFj%26pid%3DApi&f=1" alt="Pile of crabs">
+</section>
+
+<section id="java">
+    <p>How many crab have I caught this year so far? 
+        See if you can guess the number.</p>
+          
+        <div class="form">
+            <label for="guessField">Enter a guess: </label>
+            <input type = "text" id = "guessField" class = "guessField">
+            <input type = "submit" value = "Submit guess" 
+                   class = "guessSubmit" id = "submitguess">
+        </div>
+          
+        <script type = "text/javascript">
+          
+            // random value generated
+            var y = (74);
+              
+            // counting the number of guesses
+            // made for correct Guess
+            var guess = 1;
+              
+            document.getElementById("submitguess").onclick = function(){
+              
+           // number guessed by user     
+           var x = document.getElementById("guessField").value;
+          
+           if(x == y)
+           {    
+               alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+                       + guess + " GUESSES ");
+           }
+           else if(x > y) /* if guessed number is greater
+                           than actual number*/ 
+           {    
+               guess++;
+               alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+           }
+           else
+           {
+               guess++;
+               alert("OOPS SORRY!! TRY A GREATER NUMBER")
+           }
+        }
+        </script>
+
 </section>
 
 
@@ -34,16 +97,19 @@
 
 
 
-
-<section id="bottom-left-section">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.SL5Pqft6Tn9wGhZZ2nBQHgHaE9%26pid%3DApi&f=1" alt="Dungeness">
-<p>Yummy Dungeness crab</p>
-</section>
-
-
-<section id="bottom-right-section">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.W1LPIVLG6seL7GrQaOYiIAHaE8%26pid%3DApi&f=1" alt="Red Rock">
-    <p>Red Rock Crab</p>
+<section id="bottom-section">
+    
+    
+    <section id="bottom-left-section">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.SL5Pqft6Tn9wGhZZ2nBQHgHaE9%26pid%3DApi&f=1" alt="Dungeness">
+    <p>Yummy Dungeness crab</p>
+    </section>
+    
+    
+    <section id="bottom-right-section">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.W1LPIVLG6seL7GrQaOYiIAHaE8%26pid%3DApi&f=1" alt="Red Rock">
+        <p>Red Rock Crab</p>
+    </section>
 </section>
 
 
